@@ -11,11 +11,11 @@ const Home = () => (
   <div>
     <Grid container spacing={1}>
       {
-        OperatorData.map((operator) => {
-          <Grid item xs={3}>
+        OperatorData.map((operator) =>
+          <Grid item xs={1}>
             <p> { operator.name } </p>
           </Grid>
-        })
+        )
       }
     </Grid>
   </div>
