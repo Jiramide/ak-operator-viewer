@@ -11,13 +11,12 @@ import Module from './pages/Module';
 const App = () => (
   <Router>
     <Routes>
-      <Route path='/' element={ <Home /> }>
-        <Route path='operator/:operator/' element={ <Operator /> }>
+      <Route path='/' element={ <Home /> } />
+      <Route path='operator/:operator/' element={ <Operator /> }>
           <Route path='talent/' element={ <Talent /> } />
           <Route path='skill/' element={ <Skill /> } />
           <Route path='module/' element={ <Module /> } />
         </Route>
-      </Route>
     </Routes>
   </Router>
 )
