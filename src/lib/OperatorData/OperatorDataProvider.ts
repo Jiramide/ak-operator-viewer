@@ -37,7 +37,12 @@ type SPChargeType
  *
  * These special skills have duration=-1.0 within the game data.
  */
-type DurationType = "Time" | "Ammo" | "Infinite";
+type DurationType
+  = "Time"
+  | "Ammo"
+  | "Infinite"
+  | "Stance"
+  ;
 
 /**
  * SkillActivationType is an enum denoting how a skill is activated.
