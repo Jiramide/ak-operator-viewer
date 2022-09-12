@@ -32,8 +32,10 @@ type SPChargeType
  *
  * The DurationType assigned to a skill can only be derived using it's
  * description, as all skill descriptions mention ammo when it's an ammo type
- * skill and "infinite" when it's an infinite type skill. These special skills
- * have duration=1.0 within the game data.
+ * skill and "infinite" when it's an infinite type skill. This is not a
+ * comprehensive list of how to classify skills, but the idea stays the same.
+ *
+ * These special skills have duration=-1.0 within the game data.
  */
 type DurationType = "Time" | "Ammo" | "Infinite";
 
